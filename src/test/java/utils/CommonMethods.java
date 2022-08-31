@@ -17,7 +17,7 @@ import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 
-public class CommonMethods  {
+public class CommonMethods  extends PageInitializer{
 
     public static WebDriver driver;
 
@@ -42,6 +42,7 @@ public class CommonMethods  {
         driver.manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT, TimeUnit.SECONDS);
         //this method is used to initialize all the objects of the pages at the very beginning
 //        method to initalize pageInitalizer needs to called here
+        initializePageObjects();
 
     }
 

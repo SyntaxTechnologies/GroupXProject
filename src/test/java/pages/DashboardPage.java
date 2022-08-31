@@ -7,7 +7,7 @@ import utils.CommonMethods;
 
 import java.util.List;
 
-public class DashboardPage  {
+public class DashboardPage extends CommonMethods {
 
     @FindBy(id="menu_pim_viewPimModule")
     public WebElement pimOption;
